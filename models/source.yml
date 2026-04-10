@@ -1,0 +1,33 @@
+version: 2
+ 
+sources:
+  - name: raw
+    database: kav_db
+    schema: src_schema
+ 
+    tables:
+      - name: customers
+      - name: orders
+        columns:
+          - name: id
+            tests:
+              - unique
+              - not_null
+ 
+          - name: customer_id
+            tests:
+              - not_null
+ 
+      - name: orders2
+        columns:
+          - name: id
+            tests:
+              - unique
+              - not_null
+ 
+          - name: customer_id
+            tests:
+              - not_null
+ 
+      - name: payments
+ 
