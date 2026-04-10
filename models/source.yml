@@ -14,7 +14,7 @@ sources:
               - unique
               - not_null
  
-          - name: customer_id
+          - name: user_id
             tests:
               - not_null
  
@@ -25,7 +25,7 @@ sources:
               - unique
               - not_null
  
-          - name: customer_id
+          - name: user_id
             tests:
               - not_null
  
